@@ -264,11 +264,12 @@ const pinStyle = [
  ['map__digip', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6023ed3a98fac9673233e790_DIGIP.svg'],
  ['map__smart', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/602d7916d895fdbed6af3227_Luksofors.svg'],  // Smart traffic light
  ['map__smart', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/602d7917d040cb9819e71c9e_Elektrouzl%C4%81de.svg'],  // Charging point
- ['map__smart', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/602d7917d040cb746ee71c9f_Saules%20pane%C4%BCi.svg']  // Solar panels
+ ['map__smart', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/602d7917d040cb746ee71c9f_Saules%20pane%C4%BCi.svg'],  // Solar panels
+ ['map__ltk', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/60defd30a670a6824b253c77_LTK_Pin.svg']
 ];
 let map = document.getElementById('wrap-zoom');
-let pinHight = 44;
-let pinWidthCorrection = 15;
+let pinHight = 54;
+let pinWidthCorrection = 18;
 function putPins ()
 {
  for(let i = 0; i < mapInfo.length; i++)
