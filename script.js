@@ -24,7 +24,7 @@ if(correctWidth > screen.height)
 // Portrait screens
 else
 {
- document.getElementById('img-map').src = 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/60113ab951945115c51a2cbc_Map_more_area_vertical.png';
+ document.getElementById('img-map').src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e5d84e15fd1_Map_more_area_vertical.png';
  if((correctWidth - 60) * 2 < screen.height)
  {
    document.getElementById('zoom-container').style.width = correctWidth - 60 + 'px';
@@ -256,16 +256,16 @@ for(let i = 0; i < objectInfo.length; i++)
   }
 }
 const pinStyle = [
- ['map__edu', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6023ba7039eea86d9768f7a3_IT_izglitiba.svg'],
- ['map__smart', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6023ba700a59887a2485f112_Viedie_risinajumi.svg'],
- ['map__intrests', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6023ba6fbc44264b622a7924_Interesu_izgitiba.svg'],
- ['map__lab', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6023ba6f86d4d514e4635df9_Laboratorijas.svg'],
- ['map__technology', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6023ba6f2a8eeb29f0de902a_Tehnologijas.svg'],
- ['map__digip', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/6023ed3a98fac9673233e790_DIGIP.svg'],
- ['map__smart', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/602d7916d895fdbed6af3227_Luksofors.svg'],  // Smart traffic light
- ['map__smart', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/602d7917d040cb9819e71c9e_Elektrouzl%C4%81de.svg'],  // Charging point
- ['map__smart', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/602d7917d040cb746ee71c9f_Saules%20pane%C4%BCi.svg'],  // Solar panels
- ['map__ltk', 'https://uploads-ssl.webflow.com/5e932e6c65892b04bd139085/60defd30a670a6824b253c77_LTK_Pin.svg']
+ ['map__edu', 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e3ddde15fb8_IT_izglitiba.svg'],
+ ['map__smart', 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e518ce15fb9_Viedie_risinajumi.svg'],
+ ['map__intrests', 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e7fe0e15fb7_Interesu_izgitiba.svg'],
+ ['map__lab', 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e205ee15fb4_Laboratorijas.svg'],
+ ['map__technology', 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e06cde15fb6_Tehnologijas.svg'],
+ ['map__digip', 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e76efe15fc0_DIGIP.svg'],
+ ['map__smart', 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e73dbe16007_Luksofors.svg'],  // Smart traffic light
+ ['map__smart', 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67ebd28e16008_Elektrouzl%C4%81de.svg'],  // Charging point
+ ['map__smart', 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e9e96e16009_Saules%20pane%C4%BCi.svg'],  // Solar panels
+ ['map__ltk', 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67ef04de16254_LTK_Pin.svg']
 ];
 let map = document.getElementById('wrap-zoom');
 let pinHight = 54;
