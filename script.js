@@ -24,24 +24,23 @@ if(correctWidth > screen.height)
 // Portrait screens
 else
 {
- document.getElementById('img-map').src = 'https://uploads-ssl.webflow.com/60e6c9a6b5e67e31c5e15e06/60e6c9a6b5e67e5d84e15fd1_Map_more_area_vertical.png';
  if((correctWidth - 60) * 2 < screen.height)
  {
    document.getElementById('zoom-container').style.width = correctWidth - 60 + 'px';
    document.getElementById('zoom-container').style.height = (correctWidth - 60) * 2 + 'px';
-   document.getElementById('wrap-zoom').style.width = correctWidth - 60 + 'px';
+   document.getElementById('wrap-zoom').style.width = (correctWidth - 60) * 4 + 'px';
    document.getElementById('wrap-zoom').style.height = (correctWidth - 60) * 2 + 'px';
-   document.getElementById('img-map').style.width = correctWidth - 60 + 'px';
+   document.getElementById('img-map').style.width = (correctWidth - 60) * 4 + 'px';
    document.getElementById('img-map').style.height = (correctWidth - 60) * 2 + 'px';
  }
  else
  {
    document.getElementById('zoom-container').style.width = (screen.height / 2) - 60 + 'px';
-   document.getElementById('zoom-container').style.height = (screen.height / 2 - 60) * 2 + 'px';
-   document.getElementById('wrap-zoom').style.width = screen.height / 2 - 60 + 'px';
-   document.getElementById('wrap-zoom').style.height = (screen.height / 2 - 60) * 2 + 'px';
-   document.getElementById('img-map').style.width = screen.height / 2 - 60 + 'px';
-   document.getElementById('img-map').style.height = (screen.height / 2 - 60) * 2 + 'px';
+   document.getElementById('zoom-container').style.height = (screen.height - 60) + 'px';
+   document.getElementById('wrap-zoom').style.width = (screen.height - 60) * 2 + 'px';
+   document.getElementById('wrap-zoom').style.height = (screen.height - 60) + 'px';
+   document.getElementById('img-map').style.width = (screen.height - 60) * 2 + 'px';
+   document.getElementById('img-map').style.height = (screen.height - 60) + 'px';
  }
 }
 
@@ -68,10 +67,15 @@ var zoomer = (function () {
    wrapElement.style.left = '-528px';
    wrapElement.style.top = '-414px';
  }
+ else if ((correctWidth - 60) * 2 < screen.height)
+ {
+   wrapElement.style.left = '-1000px';
+   wrapElement.style.top = '-520px';
+ }
  else
  {
-   wrapElement.style.left = '-141px';
-   wrapElement.style.top = '-596px';
+   wrapElement.style.left = '-1305px';
+   wrapElement.style.top = '-780px';
 
  }
 
