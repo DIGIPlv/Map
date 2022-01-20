@@ -95,14 +95,15 @@
 
 .map__selection {
   padding: 10px 25px;
-  background-color: #590955;
-  color: #fff;
+  background-color: #decce3;
+  color: #590955;
   border-radius: 25px;
   margin-bottom: 20px;
   transition: all 0.2s ease-out;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   cursor: pointer;
+  border: 2px solid #590955;
 }
 
 .map__selection:hover {
@@ -111,8 +112,9 @@
 
 .map__active-selection {
   background: #590955;
+  border: 2px solid #590955;
   transform: scale(1.05);
-  box-shadow: 0 0 10px 3px rgb(61, 2, 99, 0.45);
+  color: #fff;
 }
 
 #map-drop {
