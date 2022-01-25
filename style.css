@@ -96,7 +96,7 @@
 .map__selection {
   padding: 10px 25px;
   background-color: #decce3;
-  color: #590955;
+  color: #262626;;
   border-radius: 25px;
   margin-bottom: 20px;
   transition: all 0.2s ease-out;
@@ -116,7 +116,14 @@
   transform: scale(1.05);
   color: #fff;
 }
-
+.map__selection_ltk {
+  border: 2px solid #fbbb42;
+  background-color: #ffefd1;
+}
+.map__selection_ltk.map__active-selection {
+  background-color: #fbbb42;
+  border: 2px solid #fbbb42;
+}
 #map-drop {
   background: #590955;
   color: #fff;

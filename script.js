@@ -290,7 +290,6 @@ function putPins ()
 }
 function createPopup(id)
 {
-
  let mapModal = document.createElement('div');
  mapModal.className = 'modal';
  mapModal.style.display = 'block';
