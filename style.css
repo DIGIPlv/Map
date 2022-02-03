@@ -19,6 +19,7 @@ select{
   height: 600px;
   position: relative;
   margin: auto;
+  max-width: 100%;
 }
 
 .map__pin {
