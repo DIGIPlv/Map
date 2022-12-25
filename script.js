@@ -285,6 +285,7 @@ function putPins ()
    pin.classList.add(pinStyle[mapInfo[i][4]][0]);
    pin.style.top = 'calc(' + mapInfo[i][5] + '% - ' + pinHight + 'px)';
    pin.style.left = 'calc(' + mapInfo[i][6] + '% - ' + pinWidthCorrection + 'px)';
+   pin.alt = "";
    map.append(pin);
  }
 }
