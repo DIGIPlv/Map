@@ -243,8 +243,8 @@ document.getElementById('zoom-container').addEventListener('mousemove', zoomer.w
 document.getElementById('zoom-container').addEventListener('mouseup', zoomer.stop_drag);
 document.getElementById('zoom-container').addEventListener('mouseout', zoomer.stop_drag);
 // Touch devices
-document.getElementById('wrap-zoom').addEventListener('touchstart', zoomer.startDragTouch);
-document.getElementById('zoom-container').addEventListener('touchmove', zoomer.whileDragTouch);
+document.getElementById('wrap-zoom').addEventListener('touchstart', zoomer.startDragTouch, {passive: true});
+document.getElementById('zoom-container').addEventListener('touchmove', zoomer.whileDragTouch, {passive: true});
 document.getElementById('zoom-container').addEventListener('touchend', zoomer.stopDragTouch);
 
 
@@ -415,7 +415,7 @@ for(let i = 0; i < pins.length; i++)
  pins[i].addEventListener('touchstart', (e) =>
  {
    createPopup(e.target.id.split('_')[1]);
- });
+ }, {passive: true});
 }
 // Hide and show some of pins
 let selectionBtns = document.getElementsByClassName('map__selection');
