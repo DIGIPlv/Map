@@ -72,7 +72,7 @@ select{
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background: #590955;
+  background: #6E198E;
   color: #ffffff;
   font-weight: 800;
   font-size: 32px;
@@ -107,7 +107,7 @@ select{
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  border: 2px solid #590955;
+  border: 2px solid #6E198E;
 }
 
 .map__selection:hover {
@@ -115,8 +115,8 @@ select{
 }
 
 .map__active-selection {
-  background: #590955;
-  border: 2px solid #590955;
+  background: #6E198E;
+  border: 2px solid #6E198E;
   transform: scale(1.05);
   color: #fff;
 }
@@ -129,7 +129,7 @@ select{
   border: 2px solid #fbbb42;
 }
 #map-drop {
-  background: #590955;
+  background: #6E198E;
   color: #fff;
 }
 
